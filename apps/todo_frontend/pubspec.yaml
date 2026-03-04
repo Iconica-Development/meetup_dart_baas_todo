@@ -1,0 +1,25 @@
+name: todo_frontend
+description: Todo frontend
+publish_to: "none"
+version: 0.0.1+1
+
+resolution: workspace
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  # Internal package
+  todo_models:
+    path: ../../packages/todo_models
+
+  # Firebase
+  cloud_firestore: ^6.1.3
+  firebase_core: ^4.5.0
+  firebase_auth: ^6.2.0
+
+  # Core packages
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^6.0.0
+  riverpod: ^3.2.1

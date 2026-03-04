@@ -1,0 +1,10 @@
+
+# FVM Version Cache
+.fvm/
+.dart_tool
+.vscode
+.dart_frog
+.env
+dotenv
+**/private/**
+build

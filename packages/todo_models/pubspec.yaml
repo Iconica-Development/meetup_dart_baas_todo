@@ -1,0 +1,20 @@
+name: todo_models
+description: Shared models for todo
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.10.0
+
+resolution: workspace
+
+dependencies:
+  dart_api_service:
+    hosted: https://forgejo.internal.iconica.nl/api/packages/internal/pub/
+  dart_iconica_utilities:
+    hosted: https://forgejo.internal.iconica.nl/api/packages/internal/pub
+    version: ^0.0.3
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.24.0

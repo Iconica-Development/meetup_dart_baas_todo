@@ -1,0 +1,18 @@
+include: package:flutter_iconica_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    avoid_annotating_with_dynamic: false
+    prefer_final_parameters: false
+    avoid_final_parameters: false
+
+formatter:
+  trailing_commas: preserve
+
+analyzer:
+  errors:
+    file_names: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "poc/**/*.dart"

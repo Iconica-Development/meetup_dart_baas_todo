@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "164290952174",
+    "project_id": "iconica-dart-baas",
+    "storage_bucket": "iconica-dart-baas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164290952174:android:28edc9a3ea6083579e2cff",
+        "android_client_info": {
+          "package_name": "com.baas_todo.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa7EpIXj-8vGLLrpY2DmJrygLYtbGydOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164290952174:android:d6e43eab5c56abb99e2cff",
+        "android_client_info": {
+          "package_name": "com.example.todo_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa7EpIXj-8vGLLrpY2DmJrygLYtbGydOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

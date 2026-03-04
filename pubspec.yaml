@@ -1,0 +1,19 @@
+name: baas_todo_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  dart_api_service:
+    hosted: https://forgejo.internal.iconica.nl/api/packages/internal/pub/
+    version: 1.2.3
+dev_dependencies:
+  flutter_iconica_analysis:
+    hosted: https://forgejo.internal.iconica.nl/api/packages/internal/pub/
+    version: ^8.0.0
+
+workspace:
+  - packages/todo_models
+  - apps/todo_backend
+  - apps/todo_frontend
