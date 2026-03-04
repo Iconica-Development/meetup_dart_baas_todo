@@ -1,0 +1,25 @@
+@startuml DartBackendWithBaas
+skinparam linetype ortho
+
+node "Backend" as backend {
+  [Database] as db
+  [API Server] as api
+
+  api --> db : Caching
+}
+
+node "BaaS" as baas {
+  [Authentication Service]
+  [Storage Service]
+  [Push Notification Service]
+}
+node "Frontend" as frontend {
+  [Mobile App]
+  [Web App]
+}
+
+frontend ---> backend : API Calls
+frontend ---> baas : Directly Uses Services
+backend --> baas : Uses Services
+
+@enduml

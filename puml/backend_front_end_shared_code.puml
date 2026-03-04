@@ -1,0 +1,24 @@
+@startuml DartBackendWithBaas
+skinparam linetype ortho
+
+package "Backend" as backend {
+    [routes]
+    [integrations]
+}
+
+package "Frontend" as frontend {
+    [widgets]
+    [services]
+}
+
+package "Shared Model" as shared {
+  [Data Models]
+  [Validation Logic]
+  [Serializers]
+  [Communication Protocols]
+}
+
+frontend ---> shared : Depends on
+backend --> shared : Depends on
+
+@enduml

@@ -43,7 +43,7 @@ class TodoSerializer extends Serializer<Todo> {
   };
 
   static Todo _fromMap(Map<String, dynamic> map) => Todo(
-    id: map[keys.id] as String,
+    id: map[keys.id] as String?,
     date: _dateTime(map[keys.date]),
     message: map[keys.message] as String,
     done: map[keys.done] as bool,
@@ -51,7 +51,7 @@ class TodoSerializer extends Serializer<Todo> {
 
   static Map<String, dynamic> _toMap(Todo object) => {
     keys.id: object.id,
-    keys.date: object.date,
+    keys.date: object.date.toIso8601String(),
     keys.message: object.message,
     keys.done: object.done,
   };
